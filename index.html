@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Calculator</h1>
+        <div class="calci-container">
+            <input type="text" class="input" id="inputElement" placeholder="0" />
+            <div class="box">
+                <button class="button" onclick="clearAll()">AC</button>
+                <button class="button" onclick="deleteIcon()">Del</button>
+                <button class="button" onclick="displayNum('%')">%</button>
+                <button class="button" onclick="displayNum('/')">/</button>
+            </div>
+            <div class="box">
+                <button class="button" onclick="displayNum('7')">7</button>
+                <button class="button" onclick="displayNum('8')">8</button>
+                <button class="button" onclick="displayNum('9')">9</button>
+                <button class="button" onclick="displayNum('+')">+</button>
+            </div>
+            <div class="box">
+                <button class="button" onclick="displayNum('6')">6</button>
+                <button class="button" onclick="displayNum('5')">5</button>
+                <button class="button" onclick="displayNum('4')">4</button>
+                <button class="button" onclick="displayNum('-')">-</button>
+            </div>
+            <div class="box ">
+                <button class="button" onclick="displayNum('3')">3</button>
+                <button class="button" onclick="displayNum('2')">2</button>
+                <button class="button" onclick="displayNum('1')">1</button>
+                <button class="button" onclick="displayNum('*')">x</button>
+            </div>
+            <div class="box">
+                <button class="button" onclick="displayNum('00')">00</button>
+                <button class="button" onclick="displayNum('0')">0</button>
+                <button class="button" onclick="displayNum('.')">.</button>
+                <button class="button" onclick="result()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
